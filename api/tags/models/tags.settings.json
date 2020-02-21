@@ -1,0 +1,27 @@
+{
+  "connection": "default",
+  "collectionName": "tags",
+  "info": {
+    "name": "Tags"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "TagName": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "text"
+    },
+    "slug": {
+      "type": "string"
+    },
+    "articles": {
+      "via": "tags",
+      "collection": "articles",
+      "dominant": true
+    }
+  }
+}
